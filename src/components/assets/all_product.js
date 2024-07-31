@@ -52,31 +52,96 @@ let all_product= [
     },
     {
         id: 4,
-        name: "Catch Me on Phasmo T-shirt", 
+        name: "Catch Me On Phasmo T-shirt", 
         category: "Phasmophobia",
         image: img4,
         price: 10
     },
     {
         id: 5,
-        name: "Navy-blue Emote Cap", 
+        name: "Navy-Blue Emote Cap", 
         category: "Phasmophobia",
         image: img5,
         price: 25
     },
     {
         id: 6,
-        name: "UV Hand-print Crop-Hoodie", 
+        name: "UV Hand-Print Crop-Hoodie", 
         category: "Phasmophobia",
         image: img6,
         price: 14.5
     },
     {
         id: 7,
-        name: "UV Hand-print Hoodie", 
+        name: "UV Hand-Print Hoodie", 
         category: "Phasmophobia",
         image: img7,
         price: 21
     },
+    {
+        id: 8,
+        name: "Haunted Mirror Keychain", 
+        category: "Phasmophobia",
+        image: img8,
+        price: 7
+    },
+    {
+        id: 9,
+        name: "Ghost-Orb Hunting T-shirt", 
+        category: "Phasmophobia",
+        image: img9,
+        price: 9
+    },
+    {
+        id: 10,
+        name: "UV Hand-Print Mug", 
+        category: "Phasmophobia",
+        image: img10,
+        price: 17
+    },
+    {
+        id: 11,
+        name: "Music Box", 
+        category: "Phasmophobia",
+        image: img11,
+        price: 25
+    },
+    {
+        id: 12,
+        name: "Glow-In-The-Dark Pendant", 
+        category: "Phasmophobia",
+        image: img12,
+        price: 12
+    },
+    {
+        id: 13,
+        name: "Life's A Revenant T-Shirt", 
+        category: "Phasmophobia",
+        image: img13,
+        price: 9
+    },
+    {
+        id: 14,
+        name: "White Handprints T-Shirt", 
+        category: "Phasmophobia",
+        image: img14,
+        price: 8
+    },
+    {
+        id: 15,
+        name: "Tarot Card Themed Uno Cards", 
+        category: "Phasmophobia",
+        image: img15,
+        price: 13.5
+    },
+    {
+        id: 16,
+        name: "Voodoo Doll Plushy", 
+        category: "Phassmophobia",
+        image: img16,
+        price: 18.5
+    },
+    
 
+    
 ];
