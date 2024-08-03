@@ -1,0 +1,111 @@
+/**Font access**/
+@font-face {
+    font-family: silk;
+    src: url(../assets/fonts/Silkscreen/Silkscreen-Regular.ttf);
+}
+
+/**Navbar setup**/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.05rem 1.7rem;
+    box-shadow: 0 0.1rem 0.3rem -0.2rem black;
+    background-color: #0b022e;
+    height: 10vh;
+    flex-wrap: nowrap; 
+}
+
+.nav-logo img {
+    height: 8.5vh;
+    width: auto;
+    padding: 0.1rem;
+    filter: drop-shadow(0 0 0.2rem #82ffe4);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 3rem; 
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; 
+}
+
+.nav-menu li {
+    font-family: silk;
+    font-size: larger;
+    cursor: pointer;
+    position: relative;
+    color: #22e000;
+    transition: color 0.3s;
+    line-height: 6vh;
+}
+
+.nav-menu li::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #4bdeff;
+    position: absolute;
+    bottom: 2px; 
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu li:hover {
+    color: #4bdeff;
+}
+
+.nav-menu li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.nav-login-cart button {
+    font-family: silk;
+    padding: 0.5rem 1rem; 
+    cursor: pointer;
+    background-color: #00ff00;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.nav-login-cart button:hover {
+    background-color: #00ffff;
+}
+
+.nav-login-cart img {
+    height: 4vh; 
+    width: auto;
+}
+
+/** Responsive design **/
+@media (max-width: 850px) {
+    .navbar { padding: 0.05rem 1rem; }
+    .nav-menu { gap: 1.5rem; }
+    .nav-menu li { font-size: medium; }
+    .nav-login-cart { gap: 0.8rem; }
+    .nav-login-cart button { padding: 0.4rem 0.8rem; }
+
+    @media (max-width: 650px) {
+        .nav-logo img { height: 6vh; }
+        .nav-login-cart img { height: 3vh; }
+        .nav-login-cart button { padding: 0.3rem 0.6rem; }
+        .nav-menu { gap: 1rem; }
+        .nav-menu li { font-size:small; }
+    }
+}
+
+
