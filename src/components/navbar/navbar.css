@@ -38,8 +38,14 @@
     cursor: pointer;
     position: relative;
     color: #22e000;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
     line-height: 6vh;
+}
+
+.nav-menu li.active {
+    color: red;
+    /* Remove the scale transform effect */
+    transform: none;
 }
 
 .nav-menu li::after {
@@ -69,16 +75,17 @@
     display: flex;
     align-items: center;
     gap: 1rem; 
+    position: relative; 
 }
 
 .nav-login-cart button {
     font-family: silk;
-    padding: 0.5rem 1rem; 
+    padding: 0.5rem 1.5rem; 
     cursor: pointer;
     background-color: #00ff00;
     color: #0a0a0a;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     transition: background-color 0.3s;
 }
 
@@ -89,6 +96,23 @@
 .nav-login-cart img {
     height: 4vh; 
     width: auto;
+    position: relative; 
+}
+
+.nav-cart-count {
+    width: 24px; 
+    height: 24px; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px; 
+    background-color: rgb(243, 111, 111);
+    color: #0a0a0a;
 }
 
 /** Responsive design **/
@@ -98,14 +122,22 @@
     .nav-menu li { font-size: medium; }
     .nav-login-cart { gap: 0.8rem; }
     .nav-login-cart button { padding: 0.4rem 0.8rem; }
-
-    @media (max-width: 650px) {
-        .nav-logo img { height: 6vh; }
-        .nav-login-cart img { height: 3vh; }
-        .nav-login-cart button { padding: 0.3rem 0.6rem; }
-        .nav-menu { gap: 1rem; }
-        .nav-menu li { font-size:small; }
+    .nav-cart-count {
+        width: 25px; 
+        height: 25px; 
+        font-size: 16px; 
     }
 }
 
-
+@media (max-width: 650px) {
+    .nav-logo img { height: 6vh; }
+    .nav-login-cart img { height: 3vh; }
+    .nav-login-cart button { padding: 0.3rem 0.6rem; }
+    .nav-menu { gap: 1rem; }
+    .nav-menu li { font-size: small; }
+    .nav-cart-count {
+        width: 20px;
+        height: 20px; 
+        font-size: 14px; 
+    }
+}
