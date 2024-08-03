@@ -42,9 +42,13 @@
     line-height: 6vh;
 }
 
+.nav-menu li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
 .nav-menu li.active {
     color: red;
-    /* Remove the scale transform effect */
     transform: none;
 }
 
