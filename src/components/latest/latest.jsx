@@ -1,6 +1,6 @@
 import React from "react";
-import "./latest.css";
-import heroimg from "../assets/heroimg.png";
+import "./Latest.css";
+import heroimg from "../Assets/heroimg.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Latest = () => {
@@ -17,12 +17,13 @@ const Latest = () => {
     //       <div>Latest Collection ➔</div>
     //     </div>
     //   </div>
-
     //   <div className="right">
     //     <img src={img} alt="" />
     //   </div>
     // </div>
-    <div className="hero w-full py-12 px-4">
+
+    // add a introduction sheet before the hero one, make sure to make it margin top and bottom evenly
+    <div className="hero w-full mb-4 py-12 px-4">
       <div className="container max-w-[2000px] mx-auto grid md:grid-cols-2 rounded-md">
         <div className="flex flex-col text-white p-16 2xl:ml-[4rem] xl:ml-[2rem] md:text-left text-center">
           <h2 className="text-[#ff00ff] font-bold xl:text-5xl lg:text-4xl md:text-3xl text-2xl">
