@@ -1,7 +1,7 @@
 /**Font access**/
 @font-face {
     font-family: silk;
-    src: url(../Assets/fonts/Silkscreen/Silkscreen-Regular.ttf);
+    src: url(../assets/fonts/Silkscreen/Silkscreen-Regular.ttf);
 }
 
 /**Navbar setup**/
@@ -11,7 +11,7 @@
     align-items: center;
     padding: 0.05rem 1.7rem;
     box-shadow: 0 0.1rem 0.3rem -0.2rem black;
-    background-color: #0b022e;
+    background-color: #0b022e;      
     height: 10vh;
     flex-wrap: nowrap; 
 }

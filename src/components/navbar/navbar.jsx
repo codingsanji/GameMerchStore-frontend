@@ -1,7 +1,7 @@
 import React from "react";
-import "./Navbar.css";
-import logo from "../Assets/logo.png";
-import cart_icon from "../Assets/cart.png";
+import "./navbar.css";
+import logo from "../assets/logo.png";
+import cart_icon from "../assets/cart.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
