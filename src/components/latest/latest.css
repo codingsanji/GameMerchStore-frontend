@@ -1,111 +1,24 @@
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: -1rem;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    border-radius: 1rem;
-    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
-    margin: 2rem;
-    color: #ffffff;
-    position: relative; 
+.container {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  animation: gradientBG 15s ease infinite;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
 }
+
 @keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-.left {
-    flex: 1 1 40vw;
-    margin-right: 4rem;
-    padding: 4rem;
-}
-.left h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #ff00ff;
-}
-.left div {
-    margin-bottom: 2rem;
-}
-.left p {
-    font-size: 3rem; 
-    color: white;    
-    margin: 0.5rem 0;
-}
-.latestbtn {
-    background-color: #ff00ff;
-    color: white;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    font-size: 1.2rem;
-    height: 4.5vh;
-}
-.latestbtn:hover {
-    background-color: #c403c4;
-}
-.right {
-    flex: 1 1 40vw;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-top: 1rem;
-    overflow: hidden; 
-}
-.right img {
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 35rem;
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-@media (max-width:650px) {
-    .hero {
-        flex-direction: column;
-        position: relative;
-        overflow: hidden; 
-        height: 160vh ;
-    }
-
-    .left {
-        margin-right: 0;
-        margin-bottom: 2rem;
-        text-align: center;
-        position: relative;
-        z-index: 1; 
-    }
-
-    .right {
-        position: absolute; 
-        top: 20%;
-        left: 0;
-        width: 100%;
-        height: 100%; 
-        overflow: hidden; 
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        z-index: 2; 
-    }
-
-    .right img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain; 
-        object-position: center; 
-        z-index: 3; 
-    }
+@media (min-width: 760px) and (max-width: 830px) {
+  .container h2 {
+    font-size: 1.5rem;
+    line-height: 2.275rem;
+  }
 }
-
