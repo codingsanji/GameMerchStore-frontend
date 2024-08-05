@@ -80,11 +80,12 @@
   align-items: center;
   gap: 1rem;
   position: relative;
+  margin-right: 1rem;
 }
 
 .nav-login-cart button {
   font-family: silk;
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1rem;
   cursor: pointer;
   background-color: #00ff00;
   color: #0a0a0a;
@@ -104,19 +105,21 @@
 }
 
 .nav-cart-count {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 0;
   right: 0;
+  padding-bottom: 2px;
   transform: translate(50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   font-size: 14px;
-  background-color: rgb(243, 111, 111);
-  color: #0a0a0a;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.9);
+  color: white;
 }
 
 /** Responsive design **/
