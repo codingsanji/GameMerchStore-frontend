@@ -1,11 +1,17 @@
 /**Font access**/
 @font-face {
+<<<<<<< HEAD
   font-family: silk;
   src: url(../assets/fonts/Silkscreen/Silkscreen-Regular.ttf);
+=======
+    font-family: silk;
+    src: url(../assets/fonts/Silkscreen/Silkscreen-Regular.ttf);
+>>>>>>> 543a5943a8a368d717a9a08fdd2155c0e9409e99
 }
 
 /**Navbar setup**/
 .navbar {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +20,16 @@
   background-color: #0b022e;
   height: 10vh;
   flex-wrap: nowrap;
+=======
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.05rem 1.7rem;
+    box-shadow: 0 0.1rem 0.3rem -0.2rem black;
+    background-color: #0b022e;      
+    height: 10vh;
+    flex-wrap: nowrap; 
+>>>>>>> 543a5943a8a368d717a9a08fdd2155c0e9409e99
 }
 
 .nav-logo img {

@@ -3,7 +3,7 @@ import "./latest.css";
 import heroimg from "../assets/heroimg.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-const Latest = () => {
+const latest = () => {
   return (
     // <div className="hero">
     //   <div className="left">
@@ -53,4 +53,4 @@ const Latest = () => {
   );
 };
 
-export default Latest;
+export default latest;
