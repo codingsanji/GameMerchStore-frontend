@@ -1,6 +1,6 @@
 import React from "react";
-import "./Latest.css";
-import heroimg from "../Assets/heroimg.png";
+import "./latest.css";
+import heroimg from "../assets/heroimg.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Latest = () => {
@@ -38,7 +38,7 @@ const Latest = () => {
           <p className="font-light xl:text-2xl lg:text-xl sm:text-2xl text-lg">
             For everyone
           </p>
-          <button className="bg-[#ff00ff] text-[rgb(48,43,99)] font-bold md:mx-0 mx-auto mt-4 p-1 w-[250px] rounded-lg cursor-pointer text-lg transition-colors duration-300 ease-in-out h-12">
+          <button className="bg-[#ff00ff] text-[rgb(43,39,91)] font-bold md:mx-0 mx-auto mt-4 p-1 w-[250px] rounded-lg cursor-pointer text-lg transition-colors duration-300 ease-in-out h-12">
             LATEST COLLECTION{" "}
             <FaLongArrowAltRight className="inline mb-1 text-xl" />
           </button>

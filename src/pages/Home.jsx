@@ -1,5 +1,5 @@
 import React from "react";
-import Latest from "./Components/Latest/Latest";
+import Latest from "../components/latest/latest";
 
 const Home = () => {
   return (
