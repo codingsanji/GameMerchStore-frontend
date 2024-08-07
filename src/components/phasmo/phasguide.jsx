@@ -29,25 +29,20 @@ const Phasguide = () => {
                         style={{ textShadow: '3px 1px 10px rgba(0, 0, 0, 2)' , fontFamily: 'eco' }}>
                         OVER-VIEW
                     </h1>
-                    <p className="text-xxs sm:text-xxs md:text-xs lg:text-base xl:text-base 2xl:text-lg text-white mb-4 sm:mb-6"
+                    <p className="text-xxs sm:text-xxs md:text-xs lg:text-base xl:text-base 2xl:text-lg text-white mb-4 sm:mb-6 break-words"
                         style={{ textShadow: '3px 1px 10px rgba(0, 0, 0, 2)' , fontFamily: 'spelite' }}>
                         Phasmophobia is a first-person horror-investigation-survival game for one to four players. The main goal is to identify the type of ghost haunting a location by gathering evidence. Players communicate via local (press "v" to toggle mute) and global (hold "b" to speak) voice chat. Evidence is logged in the ghost diary (press "j" to open).
                     </p>
-                    <p className="text-xxs sm:text-xxs md:text-xs lg:text-base xl:text-base 2xl:text-lg text-white mb-4 sm:mb-6"
+                    <p className="text-xxs sm:text-xxs md:text-xs lg:text-base xl:text-base 2xl:text-lg text-white mb-4 sm:mb-6 break-words"
                         style={{ textShadow: '3px 1px 10px rgba(0, 0, 0, 2)' , fontFamily: 'spelite' }}>
                         Succeeding will earn you XP to level up and money which can be used to unlock new maps, levels, and upgrades for their equipment. Completing objectives and taking photos can enhance and double the rewards.
                     </p>
-                    <p className="text-xxs sm:text-xxs md:text-xs lg:text-base xl:text-base 2xl:text-lg text-white"
+                    <p className="text-xxs sm:text-xxs md:text-xs lg:text-base xl:text-base 2xl:text-lg text-white break-words"
                         style={{ textShadow: '3px 1px 10px rgba(0, 0, 0, 2)' , fontFamily: 'spelite' }}>
                         It was made by Kinetic Games in 2020.
                     </p>
                 </div>
             </div>
-
-
-
-
-
         </div>
     );
 }
