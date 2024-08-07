@@ -123,22 +123,33 @@
 }
 
 /** Responsive design **/
-@media (max-width: 850px) {
+/* medium */
+@media (max-width: 768px) {
   .navbar {
-    padding: 0.05rem 1rem;
+    /* padding: 0.05rem 1rem; */
+    margin: auto;
   }
+
+  .nav-logo > img {
+    height: 6vh;
+  }
+
   .nav-menu {
     gap: 1.5rem;
   }
+
   .nav-menu li {
     font-size: medium;
   }
+
   .nav-login-cart {
     gap: 0.8rem;
   }
+  
   .nav-login-cart button {
     padding: 0.4rem 0.8rem;
   }
+
   .nav-cart-count {
     width: 25px;
     height: 25px;
@@ -146,7 +157,8 @@
   }
 }
 
-@media (max-width: 650px) {
+/* small */
+@media (max-width: 640px) {
   .nav-logo img {
     height: 6vh;
   }
