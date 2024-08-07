@@ -5,6 +5,14 @@ import './phasmoguide.css';
 import Main from '../assets/phasmo/Top.gif';
 import Name from '../assets/phasmo/phasmologo.png';
 import Middle from '../assets/phasmo/Middle.jpg';
+import Last from '../assets/phasmo/third.jpg';
+    //3rd section -- choices
+    import choice1 from '../assets/phasmo/equipment.jpg';
+    import choice2 from '../assets/phasmo/entities.webp';
+    import choice3 from '../assets/phasmo/maps.jpg';
+    import choice4 from '../assets/phasmo/cursedOBJ.jpg';
+    import choice5 from '../assets/phasmo/sanity.png';
+
 
 const Phasguide = () => {
     return (
@@ -43,6 +51,20 @@ const Phasguide = () => {
                     </p>
                 </div>
             </div>
+
+            {/*Last Section */}
+            <div>
+                <img src={Last} alt='Third' />
+                <div>
+                    <a href='https://phasmophobia.fandom.com/wiki/Equipment' target='blank'><img src={choice1} alt='equipment' /></a>
+                    <a href='https://phasmophobia.fandom.com/wiki/Ghost' target='blank'><img src={choice2} alt='entities' /></a>
+                    <a href='https://phasmophobia.fandom.com/wiki/Map' target='blank'><img src={choice3} alt='maps' /></a>
+                    <a href='https://phasmophobia.fandom.com/wiki/Cursed_possession' target='blank'><img src={choice4} alt='cursed-objects' /></a>
+                    <a href='https://phasmophobia.fandom.com/wiki/Sanity' target='blank'><img src={choice5} alt='sanity' /></a>
+                </div>
+            </div>
+
+
         </div>
     );
 }
