@@ -3,3 +3,11 @@
     font-family: phasmain;
     src: url(../assets/fonts/October_Crow/october-crow.ttf);
 }
+@font-face {
+    font-family:eco;
+    src: url(../assets/fonts/Economica/Economica-Regular.ttf);
+}
+@font-face {
+    font-family: spelite;
+    src: url(../assets/fonts/Special_Elite/SpecialElite-Regular.ttf);
+}
