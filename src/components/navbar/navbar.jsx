@@ -73,16 +73,16 @@ const Navbar = () => {
       {/* default navbar */}
       <div className="flex-grow hidden lg:flex lg:justify-center lg:items-center">
         <ul className="flex text-[#22e000] text-xl space-x-4">
-          <li className="p-4">
+          <li className="links p-4">
             <Link to="/">Home</Link>
           </li>
-          <li className="p-4">
+          <li className="links p-4">
             <Link to="/phasmo">Phasmophobia</Link>
           </li>
-          <li className="p-4">
+          <li className="links p-4">
             <Link to="/valo">Valorant</Link>
           </li>
-          <li className="p-4">
+          <li className="links p-4">
             <Link to="/shop">Shop</Link>
           </li>
         </ul>
@@ -109,21 +109,21 @@ const Navbar = () => {
       {/* dropdown menu for mobile */}
       {isOpen && (
         <div className="lg:hidden absolute top-20 left-0 right-0 bg-[#0b022e] text-[#22e000] text-xl space-y-4 z-50">
-          <ul className="flex flex-col">
-            <li className="p-4">
+          <ul className="flex flex-col text-right ml-4">
+            <li className="links1 p-4">
               <Link to="/">Home</Link>
             </li>
-            <li className="p-4">
+            <li className="links1 p-4">
               <Link to="/phasmo">Phasmophobia</Link>
             </li>
-            <li className="p-4">
+            <li className="links1 p-4">
               <Link to="/valo">Valorant</Link>
             </li>
-            <li className="p-4">
+            <li className="links1 p-4">
               <Link to="/shop">Shop</Link>
             </li>
           </ul>
-        </div>
+        </div>  
       )}
     </header>
   );

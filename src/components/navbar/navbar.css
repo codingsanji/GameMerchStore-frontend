@@ -7,13 +7,15 @@
   filter: drop-shadow(0 0 0.2rem #82ffe4);
 }
 
-.links {
+.links,
+.links1 {
   position: relative;
   color: #22e000;
   transition: color 0.3s, transform 0.3s;
 }
 
-.links.active {
+.links.active,
+.links1.active {
   color: red;
   transform: none;
 }
@@ -21,24 +23,43 @@
 .links::after {
   content: "";
   display: block;
-  width: 100%;
-  height: 2px;
+  height: 1.5px;
   background: #4bdeff;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.links1::after {
+  content: "";
+  display: block;
+  height: 1.5px;
+  background: #4bdeff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-in-out;
+  width: 30%;
 }
 
-.links:hover {
+.links:hover,
+.links1:hover {
   color: #4bdeff;
 }
 
 .links:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.links1:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: bottom right;
 }
 
 .cart-icon {
