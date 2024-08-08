@@ -14,6 +14,10 @@
   transition: color 0.3s, transform 0.3s;
 }
 
+.links1 {
+  border-bottom: solid rgba(255, 255, 255, 0.6) 1.5px;
+}
+
 .links.active,
 .links1.active {
   color: red;
@@ -35,6 +39,7 @@
 }
 
 .links1::after {
+  border-bottom: none;
   content: "";
   display: block;
   height: 1.5px;

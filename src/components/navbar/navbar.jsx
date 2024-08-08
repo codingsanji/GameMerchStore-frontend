@@ -1,47 +1,4 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import "./navbar.css";
-// import logo from "../assets/logo.png";
-// import { IoCartOutline } from "react-icons/io5";
-
-// const Navbar = () => {
-//   return (
-//     <header className="relative flex items-center h-20 mx-auto px-4 bg-[#0b022e] shadow-md" style={{ fontFamily: "silk" }}>
-//       <div className="flex-shrink-0">
-//         <Link to="/">
-//           <img className="logo w-16" src={logo} alt="Logo" />
-//         </Link>
-//       </div>
-//       <ul className="absolute left-1/2 transform -translate-x-1/2 flex text-[#22e000] text-xl space-x-4">
-//         <li className="links p-4">
-//           <Link to="/">Home</Link>
-//         </li>
-//         <li className="links p-4">
-//           <Link to="/phasmo">Phasmophobia</Link>
-//         </li>
-//         <li className="links p-4">
-//           <Link to="/valo">Valorant</Link>
-//         </li>
-//         <li className="links p-4">
-//           <Link to="/shop">Shop</Link>
-//         </li>
-//       </ul>
-//       <div className="flex ml-auto items-center mr-4 px-4 gap-8 text-white">
-//         <Link to="/login">
-//           <button className="bg-[#22e000] text-black rounded-lg text-xl px-4 py-2 cursor-pointer">Login</button>
-//         </Link>
-//         <Link to="/cart" className="relative">
-//           <IoCartOutline size={40} className="cart-icon cursor-pointer" />
-//           <div className="cart-bubble">0</div>
-//         </Link>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Navbar;
-
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./navbar.css";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
@@ -50,6 +7,7 @@ import { IoCartOutline, IoMenu } from "react-icons/io5";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const dropdownRef = useRef(null);
 
   // toggle the dropdown menu visibility
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -58,6 +16,20 @@ const Navbar = () => {
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
+
+  // close the dropdown menu when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header
@@ -108,7 +80,10 @@ const Navbar = () => {
 
       {/* dropdown menu for mobile */}
       {isOpen && (
-        <div className="lg:hidden absolute top-20 left-0 right-0 bg-[#0b022e] text-[#22e000] text-xl space-y-4 z-50">
+        <div
+          ref={dropdownRef}
+          className="lg:hidden absolute top-20 left-0 right-0 bg-[#0b022e] text-[#22e000] text-xl space-y-4 z-50"
+        >
           <ul className="flex flex-col text-right ml-4">
             <li className="links1 p-4">
               <Link to="/">Home</Link>
@@ -123,11 +98,10 @@ const Navbar = () => {
               <Link to="/shop">Shop</Link>
             </li>
           </ul>
-        </div>  
+        </div>
       )}
     </header>
   );
 };
 
 export default Navbar;
-
