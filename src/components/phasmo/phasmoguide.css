@@ -11,3 +11,12 @@
     font-family: spelite;
     src: url(../assets/fonts/Special_Elite/SpecialElite-Regular.ttf);
 }
+
+.choice-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choice-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
