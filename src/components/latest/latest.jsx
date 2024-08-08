@@ -23,8 +23,8 @@ const latest = () => {
     // </div>
 
     // add a introduction sheet before the hero one, make sure to make it margin top and bottom evenly
-    <div className="hero w-full mb-4 py-12 px-4">
-      <div className="container max-w-[2000px] mx-auto grid md:grid-cols-2 rounded-md">
+    <div className="hero w-f ull mb-4 py-12 px-4">
+      <div className=" max-w-[2000px] mx-auto grid md:grid-cols-2 rounded-md">
         <div className="flex flex-col text-white p-16 2xl:ml-[4rem] xl:ml-[2rem] md:text-left text-center">
           <h2 className="text-[#ff00ff] font-bold xl:text-5xl lg:text-4xl md:text-3xl text-2xl">
             FRESH AND FIERCE

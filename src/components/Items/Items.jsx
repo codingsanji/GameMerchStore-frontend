@@ -1,16 +1,16 @@
 import React from "react";
-import './Items.css'
+import './items.css'
 
-const Items = (props) => {
+const items = (props) => {
     return(
-        <div className="item">
+        <div className="item max-w-s ">
             <img src={props.image} alt="" />
-            <p>{props.name}</p>
-            <div className="item-prices">
+            <p className="mt-0.4 mx-0 ">{props.name}</p>
+            <div className="item-prices flex gap-1.25 text-lg " style={{color:'#230134'}}>
                 {props.price}
             </div>
         </div>
     )
 }
 
-export default Items
+export default items
