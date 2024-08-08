@@ -24,6 +24,9 @@ module.exports = {
       fontSize: {
         'xxs': '0.5rem',
       },
+      maxWidth: {
+        's': '22rem', 
+      },
     },
   },
   variants: {},
