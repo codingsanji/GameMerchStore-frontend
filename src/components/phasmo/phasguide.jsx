@@ -61,7 +61,7 @@ const Phasguide = () => {
             both locally (press v once to unmute and again to mute) and globally
             (long press "b" as long as you're speaking) using walkie-talkies.
             They can find the ghost by gathering evidence and eliminating from
-            the ghost-diary ( press "j" to open book).
+            the ghost-diary (press "j" to open book).
           </p>
           <p
             className="text-xs sm:text-sm md:text-base lg:text-lg text-white mb-4 sm:mb-6"
