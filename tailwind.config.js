@@ -32,6 +32,9 @@ module.exports = {
         '128': '36rem', 
         '144': '40rem', 
       },
+      maxHeight: {
+        '104': '40rem', 
+      },
     },
   },
   variants: {},

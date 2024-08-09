@@ -5,7 +5,9 @@ import './phasmoguide.css';
 import Main from '../assets/phasmo/Top.gif';
 import Name from '../assets/phasmo/phasmologo.png';
 import Middle from '../assets/phasmo/Middle.jpg';
-import last from '../assets/phasmo/third.jpg';
+import Third from '../assets/phasmo/third.jpg';
+import Last from '../assets/phasmo/Last.gif';
+import Ghosty from '../assets/phasmo/ghost.webp';
 // 3rd section -- choices
 import choice1 from '../assets/phasmo/equipment.jpg';
 import choice2 from '../assets/phasmo/entities.webp';
@@ -53,7 +55,7 @@ const Phasguide = () => {
             </div>
 
             {/* Second Last Section */}
-            <div className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${last})` }}>
+            <div className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${Third})` }}>
                 <div className="flex items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-14">
                     <h2 className="text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl 2xl:text-7xl text-white mb-0 text-center break-words max-w-screen-lg"
                     style={{ textShadow: '3px 1px 10px rgba(0, 0, 0, 0.7)', fontFamily: 'phasmain', marginBottom: '-1.3rem' }}>
@@ -113,8 +115,31 @@ const Phasguide = () => {
                 </div>
             </div>
 
-            {/* last Last Section */}
+            {/* Last Section */}
+            <div className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-screen flex flex-col lg:flex-row items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${Last})` }}>
+                <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-7xl px-4">
+                    <div className="hidden lg:flex lg:w-1/2 justify-start mb-6 lg:mb-0">
+                        <img src={Ghosty} alt='' 
+                        className=" md:max-h-104 lg:max-h-120 xl:max-h-144 object-contain drop-shadow-lg shadow-gray-500/50" /> 
+                    </div>
+                    <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-white">
+                        <h2 className="text-3xl lg:text-4xl mb-4 text-center lg:text-left" style={{color: '#F9E79F' , fontFamily: 'spelite'}}>T R A I L E R</h2>
+                        <div className="w-full max-w-s sm:max-w-md md:max-w-xl lg:max-w-xl xl:max-w-6xl 2xl:mac-w-6xl">
+                            <iframe 
+                            src="https://www.youtube.com/embed/pQ3SlgA9R7k?si=QbzfAloFxWkhcPJB" 
+                            title="YouTube video player" 
+                            frameBorder="0"     
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowFullScreen 
+                            className="w-full aspect-video">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+                
+        
 
         </div>
     );
