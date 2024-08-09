@@ -52,7 +52,7 @@ const Phasguide = () => {
                 </div>
             </div>
 
-            {/* Last Section */}
+            {/* Second Last Section */}
             <div className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${last})` }}>
                 <div className="flex items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-14">
                     <h2 className="text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl 2xl:text-7xl text-white mb-0 text-center break-words max-w-screen-lg"
@@ -112,6 +112,10 @@ const Phasguide = () => {
                     </div>
                 </div>
             </div>
+
+            {/* last Last Section */}
+
+
         </div>
     );
 };

@@ -1,16 +1,18 @@
 import React from "react";
 import './items.css'
 
-const items = (props) => {
+const Item = (props) => {
     return(
-        <div className="item max-w-s ">
-            <img src={props.image} alt="" />
-            <p className="mt-0.4 mx-0 ">{props.name}</p>
-            <div className="item-prices flex gap-1.25 text-lg " style={{color:'#230134'}}>
-                {props.price}
+        <div className="item bg-white rounded-lg shadow-md overflow-hidden">
+            <img src={props.image} alt={props.name} className="w-full h-48 object-cover"/>
+            <div className="p-4">
+                <p className="text-lg font-bold" style={{fontFamily:'marga'}}>{props.name}</p>
+                <div className="text-lg font-semibold" style={{color:'#8c34eb'}}>
+                    ${props.price}
+                </div>
             </div>
         </div>
     )
 }
 
-export default items
+export default Item;
