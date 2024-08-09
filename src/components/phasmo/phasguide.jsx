@@ -16,7 +16,7 @@ import choice4 from '../assets/phasmo/cursedOBJ.jpg';
 import choice5 from '../assets/phasmo/sanity.png';
 import choice from '../assets/phasmo/controls.jpg';
 
-const Phasguide = () => {
+const phasguide = () => {
     return (
         <div className="relative">
             {/* Top Section */}
@@ -145,4 +145,4 @@ const Phasguide = () => {
     );
 };
 
-export default Phasguide;
+export default phasguide;

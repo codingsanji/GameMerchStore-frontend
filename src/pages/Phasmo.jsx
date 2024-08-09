@@ -1,12 +1,12 @@
 import React from 'react'
 import Phast from '../components/phasmo/phasguide'
-import Popular from '../components/popular/popular'
+import PProducts from '../components/perproducts/pproducts'
 
 const Phasmo = () => {
     return(
         <div>
             <Phast />
-            <Popular />
+            <PProducts />
         </div>
     )
 }
