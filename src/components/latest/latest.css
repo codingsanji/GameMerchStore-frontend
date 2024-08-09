@@ -1,4 +1,4 @@
-.hero{
+.hero {
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   animation: gradientBG 15s ease infinite;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
