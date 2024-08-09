@@ -23,7 +23,14 @@ module.exports = {
         'xxs': '0.5rem',
       },
       maxWidth: {
-        's': '22rem', 
+        's': '22rem',
+      },
+      spacing: {
+        '72': '18rem',
+        '80': '20rem',
+        '96': '24rem',
+        '128': '36rem', 
+        '144': '40rem', 
       },
     },
   },
