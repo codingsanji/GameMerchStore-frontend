@@ -3,7 +3,7 @@ import "./latest.css";
 import heroimg from "../assets/heroimg.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-const latest = () => {
+const Latest = () => {
   return (
     // add a introduction sheet before the hero one, make sure to make it margin top and bottom evenly
 
@@ -41,4 +41,4 @@ const latest = () => {
   );
 };
 
-export default latest;
+export default Latest;
