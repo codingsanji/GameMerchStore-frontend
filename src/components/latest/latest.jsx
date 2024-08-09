@@ -5,23 +5,6 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const latest = () => {
   return (
-    // <div className="hero">
-    //   <div className="left">
-    //     <h2>FRESH AND FIERCE</h2>
-    //     <div>
-    //       <p>New 👋 </p>
-    //       <p>Collections</p>
-    //       <p>For Everyone</p>
-    //     </div>
-    //     <div className="latestbtn">
-    //       <div>Latest Collection ➔</div>
-    //     </div>
-    //   </div>
-    //   <div className="right">
-    //     <img src={img} alt="" />
-    //   </div>
-    // </div>
-
     // add a introduction sheet before the hero one, make sure to make it margin top and bottom evenly
     <div className="hero w-full mb-4 py-12 px-4">
       <div className="container max-w-[2000px] mx-auto grid md:grid-cols-2 rounded-md">
