@@ -1,6 +1,6 @@
+import '../Newsletter/newsletter.css'
 import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
-import { FaLongArrowAltRight } from 'react-icons/fa';
 import back from '../assets/contacto.jpg';
 
 const Newsletter = () => {
@@ -35,9 +35,9 @@ const Newsletter = () => {
       style={{ backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       {/* Text Section */}
-      <div className="md:flex-1 mb-6 md:mb-0 px-4 md:px-6 p-4 rounded-lg">
-        <h1 className="text-xl font-semibold mb-2">We would love to hear of your ideas and suggestions!</h1>
-        <h3 className="text-lg font-medium">Contact Us Here {" "} <FaLongArrowAltRight className="inline mb-1 text-xl" /></h3>
+      <div className="md:flex-1 mb-6 md:mb-0 px-4 md:px-6 p-4 rounded-lg" style={{fontFamily:'jaro'}}>
+        <h1 className="text-5xl mb-4 " style={{color:'#b0e7ff'}}>We would love to hear of your ideas and suggestions!</h1>
+        <h3 className="text-2xl mb-4 " style={{color:'#ccb5ff'}}>Contact Us Here 👉</h3>
       </div>
       
       {/* Form Section */}
