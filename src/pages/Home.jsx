@@ -3,6 +3,7 @@ import Latest from "../components/latest/latest";
 // import Item from "../components/items/items";
 import Footer from "../components/footer/footer";
 
+
 const Home = () => {
   return (
     <div>
