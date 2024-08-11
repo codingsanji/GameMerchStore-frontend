@@ -10,7 +10,7 @@ const Item = (items) => {
         className="w-full h-48 object-cover"
       />
       <div className="p-4">
-        <p className="text-lg font-bold" style={{ fontFamily: "marga" }}>
+        <p className="max-w-[180px] text-lg font-bold break-words" style={{ fontFamily: "marga" }}>
           {items.name}
         </p>
         <div className="text-lg font-semibold" style={{ color: "#8c34eb" }}>

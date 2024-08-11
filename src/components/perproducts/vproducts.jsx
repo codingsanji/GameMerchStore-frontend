@@ -11,8 +11,7 @@ const Vproducts = () => {
           <h1
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white text-center break-words max-w-screen-lg whitespace-normal lg:whitespace-nowrap"
             style={{
-              fontFamily: "phasmain",
-              textShadow: "3px 1px 10px rgba(0, 0, 0, 0.7)",
+              fontFamily: "tungsten-bold",
             }}
           >
             AVAILABLE PRODUCTS
@@ -25,7 +24,16 @@ const Vproducts = () => {
               <Item
                 key={item.id}
                 id={item.id}
-                name={item.name}
+                name={
+                  <span
+                    className="text-[18px] font-bold uppercase leading-[26px] text-[rgb(15,25,35)] balance-text"
+                    style={{
+                      fontFamily: "'Radio Canada Big', sans-serif",
+                    }}
+                  >
+                    {item.name}
+                  </span>
+                }
                 image={item.image}
                 price={item.price}
               />

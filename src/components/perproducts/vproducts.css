@@ -3,3 +3,8 @@
     font-family: valo;
     src: url(../assets/fonts/Valorant/Valorant-Font.ttf);
 }
+
+@font-face {
+    font-family: tungsten-bold;
+    src: url(../assets/fonts/Tungsten_Bold/Tungsten-Bold.ttf);
+}
