@@ -1,5 +1,5 @@
 import React from "react";
-import "./phasmoguide.css";
+import "./phasguide.css";
 
 // Importing images
 import Main from "../assets/phasmo/Top.gif";

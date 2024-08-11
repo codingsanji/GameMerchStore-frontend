@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import Vproducts from "../components/perproducts/vproducts";
+// import Valoguide from "../components/valo/valoguide";
 
 const Valo = () => {
-    return(
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <div>
+      {/* <Valoguide /> */}
+      <Vproducts />
+    </div>
+  );
+};
 
-export default Valo
+export default Valo;

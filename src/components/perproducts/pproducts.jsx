@@ -1,9 +1,9 @@
 import React from "react";
-import "./popular.css";
+import "./pproducts.css";
 import { phasmodata as data_product } from "../assets/phasmodata";
 import Item from "../items/items";
 
-const Popular = () => {
+const PProducts = () => {
   return (
     <div className="bg-gray-900 min-h-screen flex flex-col items-center">
       <div className="flex flex-col items-center justify-center w-full bg-cover bg-center">
@@ -37,4 +37,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
+export default PProducts;

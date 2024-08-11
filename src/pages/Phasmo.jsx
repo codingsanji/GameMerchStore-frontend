@@ -1,14 +1,14 @@
-import React from 'react'
-import Phast from '../components/phasmo/phasguide'
-import Popular from '../components/popular/popular'
+import React from "react";
+import Phasguide from "../components/phasmo/phasguide";
+import PProducts from "../components/perproducts/pproducts";
 
 const Phasmo = () => {
-    return(
-        <div>
-            <Phast />
-            <Popular />
-        </div>
-    )
-}
+  return (
+    <div>
+      <Phasguide />
+      <PProducts />
+    </div>
+  );
+};
 
-export default Phasmo
+export default Phasmo;
