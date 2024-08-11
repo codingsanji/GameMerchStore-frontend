@@ -5,7 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Latest = () => {
   return (
-    <div className="container max-w-full mb-4 pt-12 pb-16 px-8 bg-gray-800">
+    <div className="container max-w-full pt-12 pb-16 px-8 bg-gray-800">
       <div className="hero grid md:grid-cols-2 rounded-md">
         <div className="flex flex-col text-white p-16 2xl:ml-[4rem] xl:ml-[2rem] md:text-left text-center">
           <h2 className="text-[#ff00ff] font-bold xl:text-5xl lg:text-4xl md:text-3xl text-2xl">

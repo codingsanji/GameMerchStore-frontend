@@ -1,10 +1,16 @@
 /**font-access**/
 @font-face {
-    font-family: valo;
-    src: url(../assets/fonts/Valorant/Valorant-Font.ttf);
+  font-family: valo;
+  src: url(../assets/fonts/Valorant/Valorant-Font.ttf);
 }
 
 @font-face {
-    font-family: tungsten-bold;
-    src: url(../assets/fonts/Tungsten_Bold/Tungsten-Bold.ttf);
+  font-family: tungsten-bold;
+  src: url(../assets/fonts/Tungsten_Bold/Tungsten-Bold.ttf);
 }
+
+/* .h1 {
+  background-image: linear-gradient(red, blue);
+  color: transparent;
+  background-clip: text;
+} */
