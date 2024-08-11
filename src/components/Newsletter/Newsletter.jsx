@@ -1,4 +1,4 @@
-import '../Newsletter/newsletter.css'
+import '../Newsletter/newsletter.css';
 import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import back from '../assets/contacto.jpg';
@@ -14,7 +14,7 @@ const Newsletter = () => {
       .sendForm('service_oraslkp', 'template_7obskmz', form.current, 'uIpjKxyIrTPM225w0')
       .then(
         () => {
-          console.log(' SUCCESS! ');
+          console.log('SUCCESS!');
           setNotification("Message received! Thank you for contacting us.");
           form.current.reset();
         },
@@ -31,12 +31,14 @@ const Newsletter = () => {
 
   return (
     <div 
+      id="contact-us-section" 
       className="flex flex-col md:flex-row justify-between items-start p-6 md:p-8"
       style={{ backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      
       {/* Text Section */}
-      <div className="md:flex-1 mb-6 md:mb-0 px-4 md:px-6 p-4 rounded-lg" style={{fontFamily:'jaro'}}>
-        <h1 className="text-5xl mb-4 " style={{color:'#b0e7ff'}}>We would love to hear of your ideas and suggestions!</h1>
-        <h3 className="text-2xl mb-4 " style={{color:'#ccb5ff'}}>Contact Us Here 👉</h3>
+      <div className="md:flex-1 mb-6 md:mb-0 px-4 md:px-6 p-4 rounded-lg" style={{ fontFamily: 'jaro' }}>
+        <h1 className="text-5xl mb-4" style={{ color: '#b0e7ff' }}>We would love to hear your ideas and suggestions!</h1>
+        <h3 className="text-2xl mb-4" style={{ color: '#ccb5ff' }}>Contact Us Here 👉</h3>
       </div>
       
       {/* Form Section */}
