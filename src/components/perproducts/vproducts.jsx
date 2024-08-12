@@ -5,11 +5,11 @@ import Item from "../Items/Items";
 
 const VProducts = () => {
   return (
-    <div className="bg-[#ece8e1] min-h-screen flex flex-col items-center">
-      <div className="flex flex-col items-center justify-center w-full bg-cover bg-center">
-        <div className="mt-10 mb-0">
+    <div className="bg-[#ff4655] min-h-screen flex flex-col items-center py-4">
+      <div className="flex flex-col items-center justify-center w-full">
+        <div className="mt-10">
           <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-[#0f1923] text-center break-words max-w-screen-lg whitespace-normal lg:whitespace-nowrap"
+            className="text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-[#ece8e1] text-center break-words"
             style={{
               fontFamily: "tungsten-bold, sans-serif",
             }}
@@ -17,8 +17,8 @@ const VProducts = () => {
             AVAILABLE PRODUCTS
           </h1>
         </div>
-        <div className="w-full p-8 mt-5">
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-6 gap-8">
+        <div className="w-full p-8 mt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
             {data_product.map((item) => (
               <Item
                 key={item.id}
@@ -36,7 +36,7 @@ const VProducts = () => {
                 image={item.image}
                 price={
                   <span
-                    className="text-[#ff4655] font-[400]"
+                    className="text-[#0f1923] font-[400]"
                     style={{
                       fontFamily: "'Radio Canada Big', sans-serif",
                     }}

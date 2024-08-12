@@ -93,7 +93,7 @@ const Latest = () => {
 
         {/* Featured Products Section */}
         <section className="featured-products p-8 mb-10">
-          <h2 className=" shine text-4xl md:text-6xl font-bold mb-7 text-center">
+          <h2 className="shine text-4xl md:text-6xl font-bold mb-7 text-center">
             FEATURED PRODUCTS
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -138,13 +138,19 @@ const Latest = () => {
           </h3>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/phasmo">
-              <button className="bg-green-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-green-800 transition duration-300 w-full sm:w-auto">
+              <button
+                className="text-3xl bg-[#263238] text-white py-2 px-6 rounded-lg shadow-md hover:bg-green-800 transition duration-300 w-full sm:w-auto"
+                style={{ fontFamily: "phasmain" }}
+              >
                 PHASMOPHOBIA
               </button>
             </Link>
             <Link to="/valo">
-              <button className="bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-800 transition duration-300 w-full sm:w-auto">
-                VALORANT
+              <button
+                className="text-3xl bg-[#0f1923] text-[#ece8e1] mt-0 pt-4 px-6 rounded-lg shadow-md hover:bg-[#ff4655] transition duration-300 w-full sm:w-auto"
+                style={{ fontFamily: "valo" }}
+              >
+                vAlorant
               </button>
             </Link>
           </div>
@@ -166,7 +172,7 @@ const Latest = () => {
                   <img
                     src={img}
                     alt="gallery"
-                    className="rounded-md shadow-lg w-full"
+                    className="carousel-img rounded-md shadow-lg w-full"
                   />
                 </div>
               ))}

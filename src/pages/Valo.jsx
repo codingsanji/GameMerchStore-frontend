@@ -1,13 +1,17 @@
 import React from "react";
-import Valoguide from "../components/val/valoguide/valoguide";
-import VProducts from "../components/perproducts/vproducts";
 import ContactUs from "../components/Newsletter/Newsletter";
 import Footer from "../components/footer/footer";
+import VProducts from "../components/perproducts/vproducts";
+import Valoguide from "../components/val/valoguide/valoguide";
+import Homeval from "../components/val/homeval/homeval";
+import Weapons from "../components/val/weapons/weapons";
 
 const Valo = () => {
   return (
     <div>
+      <Homeval />
       <Valoguide />
+      <Weapons />
       <VProducts />
       <ContactUs />
       <Footer />

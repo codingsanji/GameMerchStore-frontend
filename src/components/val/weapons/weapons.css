@@ -1,13 +1,18 @@
 @font-face {
-    font-family: Tungsten;
-    src: url(../../assets/fonts/Tungsten_Bold/Tungsten-Bold.ttf);
+  font-family: Tungsten;
+  src: url(../../assets/fonts/Tungsten_Bold/Tungsten-Bold.ttf);
 }
 
 h1 {
-    font-family: "Tungsten";
-    color: #ece8e1;
-    letter-spacing: 1px;
-    font-size: 50px;
-    text-align: center;
-    padding-left: 2rem;
+  font-family: "Tungsten";
+  color: #0f1923;
+  letter-spacing: 1px;
+  font-size: 50px;
+  text-align: center;
+  padding-left: 2rem;
+}
+
+.guns:hover {
+  transform: scale(1.05);
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }

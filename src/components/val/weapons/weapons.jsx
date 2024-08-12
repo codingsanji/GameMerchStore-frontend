@@ -13,10 +13,10 @@ import {
 
 const Weapons = () => {
   return (
-    <div className="bg-[#ff4655] py-10">
+    <div className="bg-[#ece8e1] py-10">
       <div className="mb-4">
         <h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-[#ece8e1] text-center"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-[#0f1923] text-center"
           style={{
             fontFamily: "tungsten-bold, sans-serif",
           }}
