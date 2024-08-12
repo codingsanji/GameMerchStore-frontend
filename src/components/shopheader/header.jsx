@@ -8,7 +8,7 @@ const header = (props) => {
             <div
             className="flex flex-col justify-center items-center text-center p-6 md:p-8 w-full"
             style={{
-                backgroundImage: `url(${backgroundImage})`,
+                backgroundImage: 'url(' + backgroundImage + ')',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',

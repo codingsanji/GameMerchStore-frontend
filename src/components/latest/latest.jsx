@@ -87,17 +87,17 @@ const Latest = () => {
           <h2 className=" shine text-4xl md:text-6xl font-bold mb-7 text-center">FEATURED PRODUCTS</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="product p-4 rounded-md">
-              <img src={img1} alt="Product 1" className="w-full h-auto mb-4" />
+              <img src={img1} alt="Cap" className="w-full h-auto mb-4" />
               <h4 className="text-xl font-bold">Navy-Blue Emote Cap</h4>
               <p className="text-lg">$20</p>
             </div>
             <div className="product p-4 rounded-md">
-              <img src={img2} alt="Product 2" className="w-full h-auto mb-4" />
+              <img src={img2} alt=" Glasses" className="w-full h-auto mb-4" />
               <h4 className="text-xl font-bold">Cool Pixel Glasses</h4>
               <p className="text-lg">$10</p>
             </div>
             <div className="product p-4 rounded-md">
-              <img src={img3} alt="Product 3" className="w-full h-auto mb-4" />
+              <img src={img3} alt="Stickers" className="w-full h-auto mb-4" />
               <h4 className="text-xl font-bold">Valorant Stickers</h4>
               <p className="text-lg">$8</p>
             </div>
@@ -132,7 +132,7 @@ const Latest = () => {
             <Slider {...settings}>
               {galleryImages.map((img, index) => (
                 <div key={index} className="p-2">
-                  <img src={img} alt={`Gallery Image ${index + 1}`} className="rounded-md shadow-lg w-full" />
+                  <img src={img} alt='gallery' className="rounded-md shadow-lg w-full" />
                 </div>
               ))}
             </Slider>

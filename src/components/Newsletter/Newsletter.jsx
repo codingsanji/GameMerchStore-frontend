@@ -32,7 +32,7 @@ const Newsletter = () => {
   return (
     <div 
       className="flex flex-col md:flex-row justify-between items-start p-6 md:p-8"
-      style={{ backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      style={{ backgroundImage: 'url(' + back + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       
       {/* Text Section */}
       <div className="md:flex-1 mb-6 md:mb-0 px-4 md:px-6 p-4 rounded-lg" style={{ fontFamily: 'jaro' }}>
