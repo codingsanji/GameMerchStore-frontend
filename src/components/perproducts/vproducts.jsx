@@ -9,7 +9,7 @@ const VProducts = () => {
       <div className="flex flex-col items-center justify-center w-full bg-cover bg-center">
         <div className="mt-10 mb-0">
           <h1
-            className="h1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-[#ff4655] text-center break-words max-w-screen-lg whitespace-normal lg:whitespace-nowrap"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-[#0f1923] text-center break-words max-w-screen-lg whitespace-normal lg:whitespace-nowrap"
             style={{
               fontFamily: "tungsten-bold, sans-serif",
             }}
@@ -25,7 +25,7 @@ const VProducts = () => {
                 id={item.id}
                 name={
                   <span
-                    className="text-[16px] font-[600] uppercase leading-[26px] text-[rgb(15,25,35)]"
+                    className="text-[16px] font-[600] uppercase leading-[26px] text-[#0f1923]"
                     style={{
                       fontFamily: "'Radio Canada Big', sans-serif",
                     }}
@@ -36,7 +36,7 @@ const VProducts = () => {
                 image={item.image}
                 price={
                   <span
-                    className="text-[rgb(15,25,35)] font-[400]"
+                    className="text-[#ff4655] font-[400]"
                     style={{
                       fontFamily: "'Radio Canada Big', sans-serif",
                     }}

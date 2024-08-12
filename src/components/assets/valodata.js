@@ -71,7 +71,7 @@ export let valodata = [
   {
     id: 9,
     name: "Dabbing Penguin T-Shirt",
-    category: "Valorant",
+    category: "Valorant", 
     image: img9,
     price: 18,
   },

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Tungsten;
+    src: url(../../assets/fonts/Tungsten_Bold/Tungsten-Bold.ttf);
+}
+
+h1 {
+    font-family: "Tungsten";
+    color: #ece8e1;
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-align: center;
+    padding-left: 2rem;
+}
