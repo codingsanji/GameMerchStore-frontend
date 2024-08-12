@@ -32,14 +32,12 @@ const Phasguide = () => {
             alt="Name"
             className="w-auto h-auto max-w-s sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl"
           />
-          <p
-            className="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"
+          <p className="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"
             style={{
               fontFamily: "phasmain",
               wordSpacing: "0.5rem",
               letterSpacing: "0.3rem",
-            }}
-          >
+            }}>
             a friendly guide w merch
           </p>
         </div>
@@ -53,24 +51,20 @@ const Phasguide = () => {
           className="w-full h-auto object-cover opacity-100"
         />
         <div className="absolute top-0 left-0 w-full sm:w-4/5 md:w-3/4 lg:w-1/2 xl:w-2/5 2xl:w-1/3 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-14 flex flex-col items-start">
-          <h1
-            className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-bold  mb-2 mt-2"
+          <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-bold  mb-2 mt-2"
             style={{
               textShadow: "3px 1px 10px rgba(0, 0, 0, 0.7)",
               fontFamily: "spelite",
               color: "#D7BDE2",
-            }}
-          >
+            }}>
             OVER-VIEW
           </h1>
-          <p
-            className="text-xxs sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-xl mb-2 sm:mb-3 break-words"
+          <p className="text-xxs sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-xl mb-2 sm:mb-3 break-words"
             style={{
               textShadow: "3px 1px 10px rgba(0, 0, 0, 0.7)",
               fontFamily: "eco",
               color: "#a4b1bc",
-            }}
-          >
+            }}>
             Phasmophobia is a first-person horror-investigation-survival game
             for one to four players. The main goal is to identify the type of
             ghost haunting a location by gathering evidence. Players communicate
@@ -78,27 +72,23 @@ const Phasguide = () => {
             voice chat. Evidence is logged in the ghost diary (press "j" to
             open).
           </p>
-          <p
-            className="text-xxs sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-xl mb-2 sm:mb-3 break-words"
+          <p className="text-xxs sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-xl mb-2 sm:mb-3 break-words"
             style={{
               textShadow: "3px 1px 10px rgba(0, 0, 0, 0.7)",
               fontFamily: "eco",
               color: "#a4b1bc",
-            }}
-          >
+            }}>
             Succeeding will earn you XP to level up and money which can be used
             to unlock new maps, levels, and upgrades for their equipment.
             Completing objectives and taking photos can enhance and double the
             rewards.
           </p>
-          <p
-            className="text-xxs sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-xl mb-2 sm:mb-3 break-words"
+          <p className="text-xxs sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-xl mb-2 sm:mb-3 break-words"
             style={{
               textShadow: "3px 1px 10px rgba(0, 0, 0, 0.7)",
               fontFamily: "eco",
               color: "#a4b1bc",
-            }}
-          >
+            }}>
             It was made by Kinetic Games in 2020.
           </p>
         </div>
@@ -107,7 +97,7 @@ const Phasguide = () => {
       {/* Second Last Section */}
       <div
         className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${Third})` }}
+        style={{ backgroundImage: 'url(' + Third + ')' }}
       >
         <div className="flex items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-14">
           <h2
@@ -279,7 +269,7 @@ const Phasguide = () => {
       {/* Last Section */}
       <div
         className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-screen flex flex-col lg:flex-row items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${Last})` }}
+        style={{ backgroundImage: 'url(' + Last + ')' }}
       >
         <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-7xl px-4">
           <div className="hidden lg:flex lg:w-1/2 justify-start mb-6 lg:mb-0">

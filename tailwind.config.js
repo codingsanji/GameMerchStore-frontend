@@ -17,6 +17,8 @@ module.exports = {
 
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
+
+      ipad: { 'raw': '(min-device-width: 768px) and (max-device-width: 1024px)' },
     },
     extend: {
       fontSize: {

@@ -1,10 +1,10 @@
 .container {
-  background: linear-gradient(135deg, #0e3643, #3c3678, #181850);
+  background: linear-gradient(135deg, #310c3a, #3a2e66, #142042);
 }
 
 .hero {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  animation: gradientBG 15s ease infinite;
+  background: linear-gradient(135deg, #0f0c29, #3c377c, #50375f);
+  animation: gradientBG 10s ease-in-out infinite;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
 }
 
@@ -17,5 +17,62 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+.introduction {
+  background: linear-gradient(135deg, #17164b, #432b63, #36243e);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+.featured-products .product {
+  background: linear-gradient(135deg, #0e3643, #3c3678, #181850);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+.best-sellers .product {
+  background: linear-gradient(135deg, #0e3643, #3c3678, #181850);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+.carousel-container .slick-dots {
+  bottom: -30px;
+}
+
+.carousel-container .slick-dots li {
+  margin: 0 4px;
+}
+
+.carousel-container .slick-dots li button:before {
+  font-size: 12px;
+  color: rgb(185, 246, 255);
+}
+
+.carousel-container .slick-dots li.slick-active button:before {
+  color: #2eb2ff;
+}
+
+.shine {
+  background: linear-gradient(
+      to right,
+      #ccb5ff 20%,
+      #b0e7ff 30%,
+      #7cd8ff 70%,
+      #c7b0ff 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
   }
 }

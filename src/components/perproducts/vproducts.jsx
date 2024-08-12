@@ -1,7 +1,7 @@
 import React from "react";
 import "./vproducts.css";
 import { valodata as data_product } from "../assets/valodata";
-import Item from "../items/items";
+import Item from "../Items/Items";
 
 const VProducts = () => {
   return (

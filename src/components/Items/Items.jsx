@@ -1,5 +1,5 @@
 import React from "react";
-import "./items.css";
+import "./Items.css";
 
 const Item = (items) => {
   return (
@@ -18,7 +18,7 @@ const Item = (items) => {
         </p>
       </div>
       <div className="text-lg font-semibold p-4">
-          {/* i removed the '$' so we can make it different colors for our pages */}
+          {/* I removed the '$' so we can make it different colors for our pages */}
           {items.price}
       </div>
     </div>

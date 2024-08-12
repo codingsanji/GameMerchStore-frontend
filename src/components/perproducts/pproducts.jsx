@@ -1,7 +1,7 @@
 import React from "react";
 import "./pproducts.css";
 import { phasmodata as data_product } from "../assets/phasmodata";
-import Item from "../items/items";
+import Item from "../Items/Items";
 
 const PProducts = () => {
   return (
