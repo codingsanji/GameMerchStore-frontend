@@ -117,8 +117,8 @@ const Latest = () => {
           <hr className="my-6 border-t-2 border-white opacity-50" />
           <h3 className="text-xl font-semibold text-center mb-4">Choose a section you'd like to explore from our latest collection:</h3>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-green-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-green-800 transition duration-300 w-full sm:w-auto">PHASMOPHOBIA</button>
-            <button className="bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-800 transition duration-300 w-full sm:w-auto">VALORANT</button>
+            <Link to="/phasmo"><button className="bg-green-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-green-800 transition duration-300 w-full sm:w-auto">PHASMOPHOBIA</button></Link>
+            <Link to="/valo"><button className="bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-800 transition duration-300 w-full sm:w-auto">VALORANT</button></Link>
           </div>
         </section>
 
