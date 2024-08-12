@@ -42,7 +42,7 @@ export let valodata = [
   },
   {
     id: 5,
-    name: "Deadlock T-shirt",
+    name: "Deadlock T-Shirt",
     category: "Valorant",
     image: img5,
     price: 22,
@@ -70,7 +70,7 @@ export let valodata = [
   },
   {
     id: 9,
-    name: "Penguin Dabbing T-shirt",
+    name: "Dabbing Penguin T-Shirt",
     category: "Valorant",
     image: img9,
     price: 18,

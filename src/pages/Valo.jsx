@@ -1,14 +1,14 @@
 import React from "react";
-import Vproducts from "../components/perproducts/vproducts";
-// import Valoguide from "../components/valo/valoguide";
-import ContactUs from "../components/Newsletter/Newsletter"
-import Footer from "../components/footer/footer"
+import Valoguide from "../components/val/valoguide/valoguide";
+import VProducts from "../components/perproducts/vproducts";
+import ContactUs from "../components/Newsletter/Newsletter";
+import Footer from "../components/footer/footer";
 
 const Valo = () => {
   return (
     <div>
-      {/* <Valoguide /> */}
-      <Vproducts />
+      <Valoguide />
+      <VProducts />
       <ContactUs />
       <Footer />
     </div>

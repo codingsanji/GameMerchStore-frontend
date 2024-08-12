@@ -3,31 +3,47 @@ import "./vproducts.css";
 import { valodata as data_product } from "../assets/valodata";
 import Item from "../items/items";
 
-const Vproducts = () => {
+const VProducts = () => {
   return (
-    <div className="bg-gray-900 min-h-screen flex flex-col items-center">
+    <div className="bg-[#ece8e1] min-h-screen flex flex-col items-center">
       <div className="flex flex-col items-center justify-center w-full bg-cover bg-center">
         <div className="mt-10 mb-0">
           <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white text-center break-words max-w-screen-lg whitespace-normal lg:whitespace-nowrap"
+            className="h1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-[#ff4655] text-center break-words max-w-screen-lg whitespace-normal lg:whitespace-nowrap"
             style={{
-              fontFamily: "phasmain",
-              textShadow: "3px 1px 10px rgba(0, 0, 0, 0.7)",
+              fontFamily: "tungsten-bold, sans-serif",
             }}
           >
             AVAILABLE PRODUCTS
           </h1>
         </div>
-        <hr className="border-gray-700 mb-5" />
-        <div className="w-full p-6">
+        <div className="w-full p-8 mt-5">
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-6 gap-8">
             {data_product.map((item) => (
               <Item
                 key={item.id}
                 id={item.id}
-                name={item.name}
+                name={
+                  <span
+                    className="text-[16px] font-[600] uppercase leading-[26px] text-[rgb(15,25,35)]"
+                    style={{
+                      fontFamily: "'Radio Canada Big', sans-serif",
+                    }}
+                  >
+                    {item.name}
+                  </span>
+                }
                 image={item.image}
-                price={item.price}
+                price={
+                  <span
+                    className="text-[rgb(15,25,35)] font-[400]"
+                    style={{
+                      fontFamily: "'Radio Canada Big', sans-serif",
+                    }}
+                  >
+                    ${item.price}
+                  </span>
+                }
               />
             ))}
           </div>
@@ -37,4 +53,4 @@ const Vproducts = () => {
   );
 };
 
-export default Vproducts;
+export default VProducts;
