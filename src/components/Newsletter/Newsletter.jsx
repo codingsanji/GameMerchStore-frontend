@@ -31,7 +31,6 @@ const Newsletter = () => {
 
   return (
     <div 
-      id="contact-us-section" 
       className="flex flex-col md:flex-row justify-between items-start p-6 md:p-8"
       style={{ backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       
