@@ -1,3 +1,4 @@
+/*Phasmophobia Items */
 import img1 from "./phasmo/book.jpg";
 import img2 from "./phasmo/cardcrophood.jpg";
 import img3 from "./phasmo/cardhood.jpg";
@@ -15,6 +16,7 @@ import img14 from "./phasmo/teescare.jpg";
 import img15 from "./phasmo/uno.jpg";
 import img16 from "./phasmo/voodooboo.jpg";
 
+/*Valorant Items */
 import img17 from "./valo/bruhwut.jpg";
 import img18 from "./valo/cat.jpg";
 import img19 from "./valo/cypherblack.jpg";
@@ -28,7 +30,7 @@ import img26 from "./valo/poster.jpg";
 import img27 from "./valo/stickers.jpg";
 import img28 from "./valo/thirsty.jpg";
 
-let all_product = [
+export let all_product = [
     {
         id: 1,
         name: "Hand-sized Book",
