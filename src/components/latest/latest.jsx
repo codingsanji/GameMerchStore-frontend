@@ -147,10 +147,10 @@ const Latest = () => {
             </Link>
             <Link to="/valo">
               <button
-                className="text-3xl bg-[#0f1923] text-[#ece8e1] mt-0 pt-4 px-6 rounded-lg shadow-md hover:bg-[#ff4655] transition duration-300 w-full sm:w-auto"
+                className="bg-[#0f1923] text-[#ece8e1] rounded-lg shadow-md hover:bg-[#ff4655] transition duration-300 w-full sm:w-auto"
                 style={{ fontFamily: "valo" }}
               >
-                vAlorant
+                <p className="text-3xl mx-6 pt-3 pb-1">vAlorant</p>
               </button>
             </Link>
           </div>
