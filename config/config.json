@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Fufu$2005",
+    "database": "merchstore",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Fufu$2005",
+    "database": "merchstore",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Fufu$2005",
+    "database": "merchstore",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
