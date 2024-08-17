@@ -13,6 +13,8 @@ h1 {
 }
 
 .guns:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  background-color: #ff4655;
+  font-weight: bold;
 }
