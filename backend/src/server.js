@@ -1,26 +1,13 @@
-const { Sequelize } = require("sequelize");
+const express = require('express')
+const sequelize = require('./dbcontext/sequelize')
 
-// Set up a Sequelize instance
-const sequelize = new Sequelize(
-  "GameMerchStore",
-  "user",
-  "thisisforuserforthewebpj111",
-  {
-    host: "localhost",
-    dialect: "mysql",
-  }
-);
+const app = express()
 
-// Test the database connection
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log(
-      "Connection to the database has been established successfully."
-    );
-  })
-  .catch((err) => {
-    console.error("Unable to connect to the database:", err);
-  });
+sequelize.authenticate().then(() => {
+    app.listen(3001, () => {
+        console.log('App is running on port 3001')
+    })
+})
 
-module.exports = sequelize;
+app.use(express.json())
+

@@ -16,4 +16,22 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: phasmain;
+  src: url(./components/assets/fonts/October_Crow/october-crow.ttf);
+}
 
+@font-face {
+  font-family: valo;
+  src: url(./components/assets/fonts/Valorant/Valorant-Font.ttf);
+}
+
+@font-face {
+  font-family: tungsten;
+  src: url(./components/assets/fonts/Tungsten_Bold/Tungsten-Bold.ttf);
+}
+
+@font-face {
+  font-family: silk;
+  src: url(./components/assets/fonts/Silkscreen/Silkscreen-Regular.ttf);
+}

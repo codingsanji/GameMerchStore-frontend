@@ -1,5 +1,4 @@
 import React from "react";
-import "./vproducts.css";
 import { valodata as data_product } from "../assets/valodata";
 import Item from "../Items/Items";
 
@@ -11,7 +10,7 @@ const VProducts = () => {
           <h1
             className="text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-[#ece8e1] text-center break-words"
             style={{
-              fontFamily: "tungsten-bold, sans-serif",
+              fontFamily: "tungsten, sans-serif",
             }}
           >
             AVAILABLE PRODUCTS

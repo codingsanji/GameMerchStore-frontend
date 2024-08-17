@@ -1,13 +1,3 @@
-@font-face {
-  font-family: phasmain;
-  src: url(../assets/fonts/October_Crow/october-crow.ttf);
-}
-
-@font-face {
-  font-family: valo;
-  src: url(../assets/fonts/Valorant/Valorant-Font.ttf);
-}
-
 .container {
   background: linear-gradient(135deg, #310c3a, #3a2e66, #142042);
 }

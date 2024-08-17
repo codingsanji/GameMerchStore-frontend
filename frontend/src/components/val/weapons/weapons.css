@@ -1,15 +1,10 @@
-@font-face {
-  font-family: Tungsten;
-  src: url(../../assets/fonts/Tungsten_Bold/Tungsten-Bold.ttf);
-}
-
-h1 {
-  font-family: "Tungsten";
+.weapon_text {
   color: #0f1923;
   letter-spacing: 1px;
   font-size: 50px;
   text-align: center;
   padding-left: 2rem;
+  font-family: 'tungsten';
 }
 
 .guns:hover {

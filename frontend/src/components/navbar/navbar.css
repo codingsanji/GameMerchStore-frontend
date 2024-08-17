@@ -1,8 +1,3 @@
-@font-face {
-  font-family: silk;
-  src: url(../assets/fonts/Silkscreen/Silkscreen-Regular.ttf);
-}
-
 .logo {
   filter: drop-shadow(0 0 0.2rem #82ffe4);
 }
