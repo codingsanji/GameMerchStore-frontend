@@ -6,8 +6,18 @@ module.exports = (sequelize, DataTypes) => {
 	}
 	Order.init(
 		{
-			amount: DataTypes.INTEGER,
-			total: DataTypes.DECIMAL,
+			quantity: {
+				type: DataTypes.INTEGER,
+				defaultValue: 0,
+			},
+			total: {
+				type: DataTypes.DECIMAL,
+				defaultValue: 0,
+			},
+			order_date: {
+				type: DataTypes.DATE,
+				allowNull: true,
+			},
 			userId: {
 				type: DataTypes.INTEGER,
 				references: {
@@ -15,9 +25,17 @@ module.exports = (sequelize, DataTypes) => {
 					key: 'id',
 				},
 			},
+			shippingId: {
+				type: DataTypes.INTEGER,
+				references: {
+					model: 'Shipping',
+					key: 'id',
+				},
+			},
 		},
 		{
 			sequelize,
+			timestamps: true,
 			modelName: 'Order',
 		}
 	)

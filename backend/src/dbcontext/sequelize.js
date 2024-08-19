@@ -9,31 +9,35 @@ const sequelize = new Sequelize(
 		dialect: 'mysql',
 		logging: false,
 		define: {
+			timestamps: false,
 			freezeTableName: true,
-			timestamps: true,
 		},
 	}
 )
 
-const Profile = require('../entities/Profile')(sequelize, DataTypes)
 const User = require('../entities/User')(sequelize, DataTypes)
+const Category = require('../entities/Category')(sequelize, DataTypes)
+const Product = require('../entities/Product')(sequelize, DataTypes)
+const Shipping = require('../entities/Shipping')(sequelize, DataTypes)
 const Order = require('../entities/Order')(sequelize, DataTypes)
 const OrderDetail = require('../entities/OrderDetail')(sequelize, DataTypes)
-const Product = require('../entities/Product')(sequelize, DataTypes)
-
-User.hasOne(Profile, { foreignKey: 'id', as: 'Profile' })
 
 User.hasMany(Order, { foreignKey: 'userId', as: 'User' })
+
+Product.hasOne(Category, { foreignKey: 'id', as: 'Category' })
+
+Order.hasOne(Shipping, { foreignKey: 'id', as: 'Shipping' })
 
 Product.hasMany(OrderDetail, { foreignKey: 'productId', as: 'Product' })
 Order.hasMany(OrderDetail, { foreignKey: 'orderId', as: 'Order' })
 
-sequelize.sync({ alter: true })
+// sequelize.sync({ alter: true })
 
 const DbContext = {
 	User,
-	Profile,
+	Category,
 	Product,
+	Shipping,
 	Order,
 	OrderDetail,
 }

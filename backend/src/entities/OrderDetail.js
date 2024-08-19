@@ -6,14 +6,6 @@ module.exports = (sequelize, DataTypes) => {
 	}
 	OrderDetail.init(
 		{
-			productId: {
-				type: DataTypes.INTEGER,
-				primaryKey: true,
-				references: {
-					model: 'Product',
-					key: 'id',
-				},
-			},
 			orderId: {
 				type: DataTypes.INTEGER,
 				primaryKey: true,
@@ -22,11 +14,26 @@ module.exports = (sequelize, DataTypes) => {
 					key: 'id',
 				},
 			},
-			quantity: DataTypes.INTEGER,
-			subtotal: DataTypes.DECIMAL,
+			productId: {
+				type: DataTypes.INTEGER,
+				primaryKey: true,
+				references: {
+					model: 'Product',
+					key: 'id',
+				},
+			},
+			amount: {
+				type: DataTypes.INTEGER,
+				defaultValue: 0,
+			},
+			subtotal: {
+				type: DataTypes.DECIMAL,
+				defaultValue: 0,
+			},
 		},
 		{
 			sequelize,
+			timestamps: true,
 			modelName: 'OrderDetail',
 			tableName: 'order_detail',
 		}

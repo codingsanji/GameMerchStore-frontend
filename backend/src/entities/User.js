@@ -1,6 +1,5 @@
 'use strict'
 const { Model } = require('sequelize')
-const Profile = require('./Profile')
 
 module.exports = (sequelize, DataTypes) => {
 	class User extends Model {}
@@ -9,27 +8,28 @@ module.exports = (sequelize, DataTypes) => {
 			username: {
 				type: DataTypes.STRING,
 				unique: true,
+				allowNull: false,
 			},
 			email: {
 				type: DataTypes.STRING,
 				unique: true,
+				allowNull: false,
 				validate: {
 					isEmail: true,
 				},
 			},
 			password: {
 				type: DataTypes.STRING,
+				allowNull: false,
 			},
-			profileId: {
-				type: DataTypes.INTEGER,
-				references: {
-					model: 'Profile',
-					key: 'id',
-				},
+			role: {
+				type: DataTypes.BOOLEAN,
+				defaultValue: false,
 			},
 		},
 		{
 			sequelize,
+			timestamps: false,
 			modelName: 'User',
 		}
 	)

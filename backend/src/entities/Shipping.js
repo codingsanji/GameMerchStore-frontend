@@ -1,37 +1,36 @@
 'use strict'
 const { Model } = require('sequelize')
-
 module.exports = (sequelize, DataTypes) => {
-	class Profile extends Model {
+	class Shipping extends Model {
 		static associate(models) {}
 	}
-	Profile.init(
+	Shipping.init(
 		{
-			fullname: {
+			recipientName: {
 				type: DataTypes.STRING,
-				allowNull: true,
+				allowNull: false,
 			},
 			phone: {
 				type: DataTypes.STRING,
+				allowNull: false,
 				validate: {
+					len: [8, 12],
 					isNumeric: true,
-					len: 10,
 				},
-				allowNull: true,
 			},
 			address: {
 				type: DataTypes.STRING,
+				allowNull: false,
 				validate: {
+					isAlpha: true,
 					isAlphanumeric: true,
 				},
-				allowNull: true,
 			},
 		},
 		{
 			sequelize,
-			modelName: 'Profile',
+			modelName: 'Shipping',
 		}
 	)
-
-	return Profile
+	return Shipping
 }

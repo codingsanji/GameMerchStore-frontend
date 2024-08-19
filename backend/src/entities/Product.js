@@ -6,12 +6,36 @@ module.exports = (sequelize, DataTypes) => {
 	}
 	Product.init(
 		{
-			name: DataTypes.STRING,
-			description: DataTypes.STRING,
-			price: DataTypes.DECIMAL,
+			name: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			image: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			description: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			price: {
+				type: DataTypes.DECIMAL,
+				allowNull: false,
+				validate: {
+					isDecimal: true,
+				},
+			},
+			categoryId: {
+				type: DataTypes.INTEGER,
+				references: {
+					model: 'Category',
+					key: 'id',
+				},
+			},
 		},
 		{
 			sequelize,
+			timestamps: true,
 			modelName: 'Product',
 		}
 	)
