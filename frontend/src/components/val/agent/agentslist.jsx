@@ -1,0 +1,130 @@
+import React, { useState } from "react";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import {
+  controllers,
+  initiators,
+  duelists,
+  sentinels,
+} from "../../assets/agentsdata";
+import Agent from "./anAgent";
+
+const AgentsList = () => {
+  const [activeRole, setActiveRole] = useState(null);
+
+  const toggleRole = (role) => {
+    setActiveRole(activeRole === role ? null : role);
+  };
+
+  const renderAgents = (agents, roleImage) => {
+    return agents.map((agent) => (
+      <div key={agent.id} className="mb-4">
+        <Agent
+          name={agent.name}
+          role={agent.role}
+          roleImage={roleImage}
+          image={agent.image}
+        />
+      </div>
+    ));
+  };
+
+  return (
+    <div className="p-4 bg-[#ece8e1]">
+      <div className="mb-4">
+        <h1
+          className="text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-[#0f1923] text-center break-words"
+          style={{
+            fontFamily: "tungsten, sans-serif",
+          }}
+        >
+          AGENTS
+        </h1>
+      </div>
+      <div className="mb-4 mx-8">
+        <h2
+          onClick={() => toggleRole("Controllers")}
+          className="text-[#0f1923] tracking-wide md:tracking-normal text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl cursor-pointer flex items-center"
+          style={{ fontFamily: "tungsten" }}
+        >
+          Controllers{" "}
+          <img
+            src={controllers[0].roleImage}
+            alt="Controllers"
+            className="w-16 h-16 ml-4 bg-[#0f1923] rounded-full"
+          />
+          <RiArrowDropDownLine className="inline-block text-[#0f1923]" />
+        </h2>
+        {activeRole === "Controllers" && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {renderAgents(controllers, controllers[0].roleImage)}
+          </div>
+        )}
+      </div>
+
+      <div className="mb-4 mx-8">
+        <h2
+          onClick={() => toggleRole("Initiators")}
+          className="text-[#0f1923] tracking-wide md:tracking-normal text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl cursor-pointer flex items-center"
+          style={{ fontFamily: "tungsten" }}
+        >
+          Initiators{" "}
+          <img
+            src={initiators[0].roleImage}
+            alt="Initiators"
+            className="w-16 h-16 ml-4 bg-[#0f1923] rounded-full"
+          />
+          <RiArrowDropDownLine className="inline-block text-[#0f1923]" />
+        </h2>
+        {activeRole === "Initiators" && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {renderAgents(initiators, initiators[0].roleImage)}
+          </div>
+        )}
+      </div>
+
+      <div className="mb-4 mx-8">
+        <h2
+          onClick={() => toggleRole("Duelists")}
+          className="text-[#0f1923] tracking-wide md:tracking-normal text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl cursor-pointer flex items-center"
+          style={{ fontFamily: "tungsten" }}
+        >
+          Duelists{" "}
+          <img
+            src={duelists[0].roleImage}
+            alt="Duelists"
+            className="w-16 h-16 ml-4 bg-[#0f1923] rounded-full"
+          />
+          <RiArrowDropDownLine className="inline-block text-[#0f1923]" />
+        </h2>
+        {activeRole === "Duelists" && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {renderAgents(duelists, duelists[0].roleImage)}
+          </div>
+        )}
+      </div>
+
+      <div className="mb-4 mx-8">
+        <h2
+          onClick={() => toggleRole("Sentinels")}
+          className="text-[#0f1923] tracking-wide md:tracking-normal text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl cursor-pointer flex items-center"
+          style={{ fontFamily: "tungsten" }}
+        >
+          Sentinels{" "}
+          <img
+            src={sentinels[0].roleImage}
+            alt="Sentinels"
+            className="w-16 h-16 ml-4 bg-[#0f1923] rounded-full"
+          />
+          <RiArrowDropDownLine className="inline-block text-[#0f1923]" />
+        </h2>
+        {activeRole === "Sentinels" && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {renderAgents(sentinels, sentinels[0].roleImage)}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default AgentsList;
