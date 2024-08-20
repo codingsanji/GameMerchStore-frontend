@@ -1,18 +1,19 @@
 import React from "react";
 import ContactUs from "../components/Newsletter/Newsletter";
 import Footer from "../components/footer/footer";
-import VProducts from "../components/perproducts/vproducts";
-import Valoguide from "../components/val/valoguide/valoguide";
 import Homeval from "../components/val/homeval/homeval";
+// import Valoguide from "../components/val/valoguide/valoguide";
+// import Agent from "../components/val/agent/anAgent";
+import AgentsList from "../components/val/agent/agents";
 import Weapons from "../components/val/weapons/weapons";
-import Agent from "../components/val/agent/anAgent";
+import VProducts from "../components/perproducts/vproducts";
 
 const Valo = () => {
   return (
     <div>
       <Homeval />
-      <Valoguide />
-      <Agent />
+      {/* <Valoguide /> */}
+      <AgentsList />
       <Weapons />
       <VProducts />
       <ContactUs />
