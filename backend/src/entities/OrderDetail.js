@@ -27,13 +27,12 @@ module.exports = (sequelize, DataTypes) => {
 				defaultValue: 0,
 			},
 			subtotal: {
-				type: DataTypes.DECIMAL,
+				type: DataTypes.DOUBLE,
 				defaultValue: 0,
 			},
 		},
 		{
 			sequelize,
-			timestamps: true,
 			modelName: 'OrderDetail',
 			tableName: 'order_detail',
 		}

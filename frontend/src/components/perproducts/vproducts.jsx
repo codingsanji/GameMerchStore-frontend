@@ -8,7 +8,7 @@ const VProducts = () => {
       <div className="flex flex-col items-center justify-center w-full">
         <div className="mt-10">
           <h1
-            className="text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-[#ece8e1] text-center break-words"
+            className="text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-[#ece8e1] text-center break-words"
             style={{
               fontFamily: "tungsten, sans-serif",
             }}
