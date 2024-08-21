@@ -16,7 +16,12 @@ const Weapons = () => {
     <div className="bg-[#ece8e1] py-10">
       <div className="mb-4">
         <a href="https://valorant.fandom.com/wiki/Weapons">
-          <h1 className="weapon_text text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-[#0f1923] text-center">
+          <h1
+            className="text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-[#0f1923] text-center break-words"
+            style={{
+              fontFamily: "tungsten, sans-serif",
+            }}
+          >
             WEAPONS
           </h1>
         </a>

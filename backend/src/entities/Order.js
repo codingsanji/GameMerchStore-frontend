@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
 				defaultValue: 0,
 			},
 			total: {
-				type: DataTypes.DECIMAL,
+				type: DataTypes.DOUBLE,
 				defaultValue: 0,
 			},
 			order_date: {
@@ -35,7 +35,6 @@ module.exports = (sequelize, DataTypes) => {
 		},
 		{
 			sequelize,
-			timestamps: true,
 			modelName: 'Order',
 		}
 	)

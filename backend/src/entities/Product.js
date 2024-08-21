@@ -19,10 +19,10 @@ module.exports = (sequelize, DataTypes) => {
 				allowNull: false,
 			},
 			price: {
-				type: DataTypes.DECIMAL,
+				type: DataTypes.DOUBLE,
 				allowNull: false,
 				validate: {
-					isDecimal: true,
+					isFloat: true,
 				},
 			},
 			categoryId: {
@@ -35,7 +35,6 @@ module.exports = (sequelize, DataTypes) => {
 		},
 		{
 			sequelize,
-			timestamps: true,
 			modelName: 'Product',
 		}
 	)
