@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const RegJoin = () => {
     return (
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-4 overflow-hidden">
-            <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6 -mt-12"> {/* Adjusted margin-top */}
-                <h1 className="text-4xl font-bold text-center text-gray-700 -ml-5 md:-ml-7 pb-1">Sign Up</h1>
+            <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6 -mt-12"> 
+                <h1 className="text-4xl font-bold text-center text-gray-700 -ml-0 md:-ml-7 pb-1 mb-4">Sign Up</h1>
                 <div className="flex flex-col justify-center space-y-6">
                     <div className="w-full space-y-4">
                         <input 
@@ -28,9 +29,11 @@ const RegJoin = () => {
                     >
                         Continue
                     </button>
-                    <p className="text-center text-gray-600">
-                        Already have an account? <span className="text-purple-600 hover:underline cursor-pointer">Login here</span>.
-                    </p>
+                    <Link to="/login">
+                        <p className="text-center text-gray-600">
+                            Already have an account? <span className="text-purple-600 hover:underline cursor-pointer">Login here</span>.
+                        </p>
+                    </Link>
                     <div className="flex items-center mt-4">
                         <input 
                             type="checkbox" 

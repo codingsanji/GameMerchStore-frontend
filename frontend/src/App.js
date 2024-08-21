@@ -11,6 +11,7 @@ import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import Phasmo from "./pages/Phasmo";
 import Valo from "./pages/Valo";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -23,11 +24,12 @@ function App() {
           <Route path="/valo" element={<Valo />} />
           <Route path="/phasmo" element={<Phasmo />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/login" element={<Logup />} />
+          <Route path="/signup" element={<Logup />} />
           <Route path="/product" element={<Product />}>
             <Route path=":productId" element={<Product />} />
           </Route>
           <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>
