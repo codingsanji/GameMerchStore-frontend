@@ -15,7 +15,7 @@ const header = (props) => {
             }}
             >
             <h1 className="shine text-4xl md:text-7xl sm:text-4xl lg:text-8xl xl:text-8xl 2xl:text-8xl font-bold tracking-widest md:mt-8 " style={{fontFamily:'bam'}}>PRODUCTS</h1>
-            <h3 className="shine text-xs md:text-base sm:text-xs lg:xs xl:text-base 2xl:text-base mt-1 md:mb-8 " style={{fontFamily: "Arial, Helvetica, sans-serif"}}>Featuring our Latest and Hottest Collections</h3>
+            <h3 className="shine text-xs md:text-base sm:text-xs lg:xs xl:text-base 2xl:text-base mt-1 mb-8 md:mb-10 " style={{fontFamily: "Arial, Helvetica, sans-serif"}}>Featuring our Latest and Hottest Collections</h3>
             </div>
 
 
