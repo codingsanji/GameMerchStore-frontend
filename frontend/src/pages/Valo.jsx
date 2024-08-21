@@ -4,7 +4,7 @@ import Footer from "../components/footer/footer";
 import Homeval from "../components/val/homeval/homeval";
 // import Valoguide from "../components/val/valoguide/valoguide";
 // import Agent from "../components/val/agent/anAgent";
-import AgentsList from "../components/val/agent/agentslist";
+import AgentsList from "../components/val/agents/agentslist";
 import Weapons from "../components/val/weapons/weapons";
 import VProducts from "../components/perproducts/vproducts";
 
