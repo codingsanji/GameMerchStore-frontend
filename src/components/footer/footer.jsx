@@ -61,8 +61,8 @@ const Footer = () => {
           <ul>
             <li className="py-2 md:text-sm text-xs">Email</li>
             <li className="py-2 md:text-sm text-xs">Phone</li>
-            <li className="py-2 md:text-sm text-xs">idk</li>
-            <li className="py-2 md:text-sm text-xs">idk</li>
+            <li className="py-2 md:text-sm text-xs"></li>
+            <li className="py-2 md:text-sm text-xs"></li>
           </ul>
         </div>
         <div>
