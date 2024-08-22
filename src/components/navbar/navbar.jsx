@@ -19,10 +19,9 @@ const Navbar = () => {
   // close the dropdown menu when the route changes
   useEffect(() => {
     setIsOpen(false);
-    axiosclient
-      .get("/order")
-      .then((response) => {
-        setCartQuantity(response.data.quantity)});
+    axiosclient.get("/order").then((response) => {
+      setCartQuantity(response.data.quantity);
+    });
   }, [location]);
 
   // close the dropdown menu when clicking outside of it
