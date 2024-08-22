@@ -1,20 +1,19 @@
 import React from "react";
 import "./Items.css";
+import { Link } from 'react-router-dom';
 
-const Item = (items) => {
+const Item = ({ id, name, image, price }) => {
   return (
     <div className="item bg-white rounded-lg shadow-md overflow-hidden">
-      <img
-        src={items.image}
-        alt={items.name}
-        className="w-full h-48 object-cover"
-      />
+      <Link to={`/product/${id}`}>
+        <img src={image} alt={name} className="w-full h-48 object-cover" />
+      </Link> 
       <div className="w-[85%] h-20 break-words p-4">
         <p className="text-lg font-bold" style={{ fontFamily: "marga" }}>
-          {items.name}
+          {name}
         </p>
       </div>
-      <div className="text-lg font-semibold p-4">{items.price}</div>
+      <div className="text-lg font-semibold p-4">{price}</div>
     </div>
   );
 };

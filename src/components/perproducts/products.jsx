@@ -3,7 +3,7 @@ import { all_product as data_product } from "../assets/all_product";
 import Item from "../Items/Items";
 import Filter from "../filter/Filter";
 
-const PProducts = () => {
+const Products = () => {
   const [filteredProducts, setFilteredProducts] = useState(data_product);
 
   const handleFilter = ({ selectedCategory, searchName, maxPrice }) => {
@@ -51,4 +51,4 @@ const PProducts = () => {
   );
 };
 
-export default PProducts;
+export default Products;
