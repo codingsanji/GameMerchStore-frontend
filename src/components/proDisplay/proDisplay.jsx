@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import starY from "../assets/star.png";
 import starN from "../assets/starN.png";
 import "../phasmo/phasguide.css";
 import axiosclient from "../../utils/axiosclient";
+=======
+import React from 'react';
+import { Link } from 'react-router-dom';
+import starY from '../assets/star.png';
+import starN from '../assets/starN.png';
+import '../phasmo/phasguide.css';
+>>>>>>> 7fae61dbad3c8bb5b76373092e0c3c01b6dc0e7a
 
 const getRandomItems = (items, count) => {
   let shuffled = [...items].sort(() => 0.5 - Math.random());
@@ -30,6 +38,7 @@ const ProDisplay = ({ product, all_product }) => {
   );
   const randomProducts = getRandomItems(sameCategoryProducts, 4);
 
+<<<<<<< HEAD
   const randomRelatedProducts = getRandomItems(
     all_product.filter((p) => p.id !== product.id),
     4
@@ -39,6 +48,9 @@ const ProDisplay = ({ product, all_product }) => {
     event.preventDefault();
     axiosclient.post("/order/add", data).then((response) => navigate("/cart"));
   };
+=======
+  const randomRelatedProducts = getRandomItems(all_product.filter(p => p.id !== product.id), 4);
+>>>>>>> 7fae61dbad3c8bb5b76373092e0c3c01b6dc0e7a
 
   return (
     <div className="min-h-screen text-white p-4 mb-12">
@@ -148,6 +160,32 @@ const ProDisplay = ({ product, all_product }) => {
                   <h3 className="text-lg font-semibold mb-1 text-gray-800">
                     {p.name}
                   </h3>
+                  <p className="text-gray-600">${p.price}</p>
+                </div>
+              </Link>
+            ))
+          ) : (
+            <p>No related products available</p>
+          )}
+        </div>
+      </div>
+
+      {/* Related Products */}
+      <div className="related-products mt-12">
+        <div className="text-center mb-4">
+          <h2 className="text-4xl font-bold text-gray-800" style={{ fontFamily: "eco" }}>Related Products</h2>
+        </div>
+        <div className="flex flex-row flex-wrap justify-between">
+          {randomRelatedProducts.length > 0 ? (
+            randomRelatedProducts.map(p => (
+              <Link key={p.id} to={`/product/${p.id}`} className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 p-2">
+                <div className="bg-white p-4 rounded shadow-md flex flex-col items-center h-full">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-64 object-cover mb-2 rounded"
+                  />
+                  <h3 className="text-lg font-semibold mb-1 text-gray-800">{p.name}</h3>
                   <p className="text-gray-600">${p.price}</p>
                 </div>
               </Link>
