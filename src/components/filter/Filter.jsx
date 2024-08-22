@@ -32,7 +32,9 @@ const Filter = ({ onFilter }) => {
         <button
           onClick={handleApply}
           className="p-2 text-sm bg-gray-600 text-white rounded-md hover:bg-gray-700"
-        >Apply</button>
+        >
+          Apply
+        </button>
       </div>
     </div>
   );

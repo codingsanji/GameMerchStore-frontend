@@ -2,8 +2,6 @@ import "./App.css";
 import Navbar from "./components/navbar/navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
-import { useEffect } from 'react'
-import axios from "axios";
 
 //importing the pages to add path
 import Home from "./pages/Home";
@@ -16,9 +14,6 @@ import Valo from "./pages/Valo";
 import Login from "./pages/Login";
 
 function App() {
-  useEffect(() => {
-    axios.get('http://localhost:3001/product').then((response) => console.log(response.data))
-  }, [])
   return (
     <div>
       <BrowserRouter>

@@ -10,17 +10,11 @@ const Item = (items) => {
         className="w-full h-48 object-cover"
       />
       <div className="w-[85%] h-20 break-words p-4">
-        <p
-          className="text-lg font-bold"
-          style={{ fontFamily: "marga" }}
-        >
+        <p className="text-lg font-bold" style={{ fontFamily: "marga" }}>
           {items.name}
         </p>
       </div>
-      <div className="text-lg font-semibold p-4">
-          {/* I removed the '$' so we can make it different colors for our pages */}
-          {items.price}
-      </div>
+      <div className="text-lg font-semibold p-4">{items.price}</div>
     </div>
   );
 };
