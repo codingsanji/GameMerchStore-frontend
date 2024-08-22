@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import starY from '../assets/star.png';
 import starN from '../assets/starN.png';
+import '../phasmo/phasguide.css';
 
 const getRandomItems = (items, count) => {
   let shuffled = [...items].sort(() => 0.5 - Math.random());
@@ -16,6 +17,8 @@ const ProDisplay = ({ product, all_product }) => {
 
   const sameCategoryProducts = all_product.filter(p => p.category === product.category && p.id !== product.id);
   const randomProducts = getRandomItems(sameCategoryProducts, 4);
+
+  const randomRelatedProducts = getRandomItems(all_product.filter(p => p.id !== product.id), 4);
 
   return (
     <div className="min-h-screen text-white p-4 mb-12">
@@ -75,6 +78,32 @@ const ProDisplay = ({ product, all_product }) => {
           <button className="mt-6 px-4 lg:px-6 py-2 lg:py-3 bg-blue-600 text-white rounded hover:bg-blue-700">
             ADD TO CART
           </button>
+        </div>
+      </div>
+
+      {/* Related Products */}
+      <div className="related-products mt-12">
+        <div className="text-center mb-4">
+          <h2 className="text-4xl font-bold text-gray-800" style={{ fontFamily: "eco" }}>Related Products</h2>
+        </div>
+        <div className="flex flex-row flex-wrap justify-between">
+          {randomRelatedProducts.length > 0 ? (
+            randomRelatedProducts.map(p => (
+              <Link key={p.id} to={`/product/${p.id}`} className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 p-2">
+                <div className="bg-white p-4 rounded shadow-md flex flex-col items-center h-full">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-64 object-cover mb-2 rounded"
+                  />
+                  <h3 className="text-lg font-semibold mb-1 text-gray-800">{p.name}</h3>
+                  <p className="text-gray-600">${p.price}</p>
+                </div>
+              </Link>
+            ))
+          ) : (
+            <p>No related products available</p>
+          )}
         </div>
       </div>
     </div>
