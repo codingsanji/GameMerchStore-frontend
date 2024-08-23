@@ -23,9 +23,12 @@ const Footer = () => {
           </h1>
         </div>
         <p className="py-4 md:text-lg text-sm">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit
-          ullam iste repellat consequatur libero reiciendis, blanditiis
-          accusantium.
+          This initiative is an interactive online platform that spotlights two
+          prominent games each month, providing users with a wealth of resources
+          including blogs, tutorials, videos, and exclusive merchandise created
+          in partnership with game developers. Support out initiative by
+          applying and sending in mails in the section above. We check
+          everything you sent! 😉
         </p>
         <div className="flex justify-between md:w-[75%] w-[70%] my-6">
           <FaFacebookSquare size={30} />
@@ -61,8 +64,8 @@ const Footer = () => {
           <ul>
             <li className="py-2 md:text-sm text-xs">Email</li>
             <li className="py-2 md:text-sm text-xs">Phone</li>
-            <li className="py-2 md:text-sm text-xs"></li>
-            <li className="py-2 md:text-sm text-xs"></li>
+            <li className="py-2 md:text-sm text-xs">Telegram</li>
+            <li className="py-2 md:text-sm text-xs">WhatsApp</li>
           </ul>
         </div>
         <div>
