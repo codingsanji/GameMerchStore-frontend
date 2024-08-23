@@ -234,7 +234,7 @@ const Cart = () => {
                   <a
                     href="#"
                     title=""
-                    className="inline-flex items-center gap-2 text-sm font-medium text-primary-700 underline hover:no-underline dark:text-primary-500"
+                    className="text-white inline-flex items-center gap-2 text-sm font-medium text-primary-700 underline hover:no-underline dark:text-primary-500"
                   >
                     Continue Shopping
                     <svg
