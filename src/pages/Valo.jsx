@@ -17,8 +17,6 @@ const Valo = () => {
       <Map />
       <Weapons />
       <VProducts />
-      <ContactUs />
-      <Footer />
     </div>
   );
 };

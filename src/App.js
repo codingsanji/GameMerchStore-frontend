@@ -12,6 +12,8 @@ import Cart from "./pages/Cart";
 import Phasmo from "./pages/Phasmo";
 import Valo from "./pages/Valo";
 import Login from "./pages/Login";
+import Newsletter from "./components/Newsletter/Newsletter";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<Login />} />
         </Routes>
+        <Newsletter />
+        <Footer />
       </BrowserRouter>
     </div>
   );

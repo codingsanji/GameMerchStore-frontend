@@ -4,19 +4,14 @@ const Snackbar = ({ message, onClose, type = "error" }) => {
   if (!message) return null;
 
   // Define styles based on the message type
-  const backgroundColor =
-    {
-      error: "bg-red-600",
-      success: "bg-green-600",
-    }[type] || "bg-red-600";
+  const backgroundColor = {
+    error: "bg-red-600",
+    success: "bg-green-600",
+  }[type] || "bg-red-600";
 
   return (
     <div
-<<<<<<< HEAD
-      className={'fixed bottom-4 right-4 ${backgroundColor} text-white py-2 px-4 rounded shadow-lg'}
-=======
       className={`fixed bottom-4 right-4 ${backgroundColor} text-white py-2 px-4 rounded shadow-lg`}
->>>>>>> 9426f011ce2e3734c814231ab6ed73d231b29714
       role="alert"
     >
       <div className="flex items-center justify-between">

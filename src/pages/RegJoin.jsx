@@ -108,7 +108,11 @@ const RegJoin = () => {
           </div>
         </form>
         <Snackbar type="error" message={error} onClose={handleCloseSnackbar} />
-        <Snackbar type="success" message={success} onClose={handleCloseSnackbar} />
+        <Snackbar
+          type="success"
+          message={success}
+          onClose={handleCloseSnackbar}
+        />
       </div>
     </div>
   );
