@@ -11,7 +11,7 @@ const Snackbar = ({ message, onClose, type = "error" }) => {
 
   return (
     <div
-      className={fixed bottom-4 right-4 ${backgroundColor} text-white py-2 px-4 rounded shadow-lg}
+      className={'fixed bottom-4 right-4 ${backgroundColor} text-white py-2 px-4 rounded shadow-lg'}
       role="alert"
     >
       <div className="flex items-center justify-between">
