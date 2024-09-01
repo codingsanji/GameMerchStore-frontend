@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axiosclient from "../utils/axiosclient";
-import Snackbar from "../components/snackbar/Snackbar";
+import Snackbar from "../components/snackbar/snackbar";
 
 const RegJoin = () => {
   const [data, setData] = useState({ username: "", email: "", password: "" });
