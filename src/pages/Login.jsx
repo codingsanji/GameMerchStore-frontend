@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axiosclient from "../utils/axiosclient";
-import Snackbar from "../components/snackbar/Snackbar";
+import Snackbar from "../components/snackbar/snackbar";
 
 const Login = () => {
   const [data, setData] = useState({ email: "", password: "" });
